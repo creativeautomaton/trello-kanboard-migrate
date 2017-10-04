@@ -39,14 +39,10 @@
  It should work if not this is a beta so not alot of testing but post to the issues section and I'll fix if I have time.
 
 
-
  [Download the plugin here!](http://creativeautomaton.com/trello-kanboard-migrate/)
 
  ## Usage
- To use aperture.css in your website, simply drop the stylesheet into your document's `<head>`, and add the class `apertured` to an element with a background image, along with any of the animation names. That's it! You've got a CSS animated loop video effect. Kool Beans!
-
-
- You can build video animations from aperture.css when you combine it with jQuery or add your own CSS rules. Dynamically add video animations using jQuery with ease:
+ To use TrelloMigrate in your kanbord, simply drop the TrelloMigrate folder into your Kanboard plugins folder and get all the api keys and login to trello to get your boards into Kanboard.
 
 
  ## License
