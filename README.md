@@ -46,7 +46,7 @@
 
 
  ## License
- [Aperture.css](http://creativeautomaton.com/trello-kanboard-migrate/) is licensed under the MIT license. (http://opensource.org/licenses/MIT)
+ [TrelloMigrate](http://creativeautomaton.com/trello-kanboard-migrate/) is licensed under the MIT license. (http://opensource.org/licenses/MIT)
  [Creative Automaton](http://creativeautomaton.com/)
 
  ## Contributing
