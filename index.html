@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name=title content="TrelloMigrate">
+    <meta name=description content="TrelloMigrate is a bunch of cool, fun, and cross-browser background animations for you to use in your projects. Great for emphasis, home pages, sliders." />
+    <meta name=author content="creativeautomaton.com" />
+    <meta name=keywords content="css, video background effects" />
+    <meta name="robots" content="index, follow" />
+
+    <title> TrelloMigrate </title>
+
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://code.jquery.com" />
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="TrelloMigrate" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="header">
+  <div class="wrap">
+   <span id="sandbox" style="display: block;"><h1 class="title">TrelloMigrate</h1></span>
+    <span class="sub-title">TrelloMigrate is a bunch of cool cross-browser background animations effects for you to use in your projects. Great for emphasis, hero sections, and to replace sliders.</span>
+  </div>
+</header><!-- /.site__header -->
+
+<main class="site__content island" role="content">
+  <div class="wrap">
+    <form>
+      <select class="input input--dropdown js--animations">
+        <optgroup label="Attention Seekers">
+          <option value="ghost">Ghost</option>
+          <option value="flash">flash</option>
+          <option value="jitter">jitter</option>
+          <option value="focus-blur">focus-blur</option>
+        </optgroup>
+      </select>
+      <button class="butt js--triggerAnimation">Add Effect!</button>
+    </form>
+    <hr />
+
+    <section id="viewer">
+      <img src="example.jpg" alt="example viewer for the animation effects." />
+    </section>
+
+    <hr />
+    <p class="meta"><a target="_blank" href="https://raw.githubusercontent.com/creativeautomaton/trello-kanboard-migrate/master/aperture.min.css/TrelloMigrate" download="TrelloMigrate">Download TrelloMigrate</a> or <a href="https://github.com/creativeautomaton/trello-kanboard-migrate" target="_blank" >View Repo on GitHub.com</a></p>
+    <p><small> Built by the <a href="http://creativeautomaton.com" target="_blank"> Crerative Automaton Cooperative </a>.</small></p>
+  </div>
+</main><!-- /.site__content -->
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script>
+  function testAnim(x) {
+    $('#viewer').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $(this).removeClass();
+    });
+  };
+  $(document).ready(function(){
+    $('.js--triggerAnimation').click(function(e){
+      e.preventDefault();
+      var anim = $('.js--animations').val();
+      testAnim(anim);
+    });
+    $('.js--animations').change(function(){
+      var anim = $(this).val();
+      testAnim(anim);
+    });
+  });
+</script>
+
+</body>
+</html>
